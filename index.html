@@ -23,6 +23,7 @@
         <button class="tab active" data-tab="criterios" role="tab" aria-selected="true" tabindex="0">Criterios</button>
         <button class="tab" data-tab="instrumentos" role="tab" aria-selected="false" tabindex="0">Instrumentos</button>
         <button class="tab" data-tab="evaluacion" role="tab" aria-selected="false" tabindex="0">Evaluación</button>
+        <button class="tab" data-tab="puzzle" role="tab" aria-selected="false" tabindex="0">Puzzle Clínico</button>
     </nav>
 
     <main>
@@ -88,6 +89,31 @@
             <div id="quiz-inicial" class="quiz-container"></div>
             <div id="quiz-medio" class="quiz-container"></div>
             <div id="quiz-superior" class="quiz-container"></div>
+        </section>
+
+        <section id="puzzle" class="tab-content" role="tabpanel">
+            <h2>🧩 Puzzle Clínico Interactivo</h2>
+            <p>Juego avanzado de diagnóstico diferencial: Estrés vs Trastornos de Ansiedad</p>
+            <div class="instrument-grid">
+                <button class="instrument-card" onclick="window.open('puzzle-estres-ansiedad.html', '_blank')" aria-label="Iniciar Puzzle Clínico" tabindex="0">
+                    <span class="instrument-name">🎯 Puzzle Avanzado</span>
+                    <span class="instrument-short">Estrés vs Ansiedad (DSM-5-TR)</span>
+                </button>
+                <div class="instrument-card" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); cursor: default;">
+                    <span class="instrument-name">📚 Características</span>
+                    <span class="instrument-short" style="font-size: 12px;">4 etapas • Complejidad creciente • Cartas aleatorias • Multijugador</span>
+                </div>
+            </div>
+            <div style="background: rgba(52, 152, 219, 0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <h3>🎮 Acerca del Puzzle</h3>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                    <li><strong>Etapa 1:</strong> Síntomas diferenciadores básicos</li>
+                    <li><strong>Etapa 2:</strong> Criterios diagnósticos específicos (8 trastornos)</li>
+                    <li><strong>Etapa 3:</strong> Casos clínicos complejos con comorbilidades</li>
+                    <li><strong>Etapa 4:</strong> Estrategias de intervención avanzadas</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>🎲 Novedad:</strong> Las cartas se mezclan aleatoriamente en cada intento para mayor desafío educativo.</p>
+            </div>
         </section>
     </main>
 
